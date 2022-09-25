@@ -7,23 +7,24 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__link" href="/source/index.html">
-        <img class="page-header__logo" src="/source/img/logo.png"
+        <img class="page-header__logo" src="img/logotype-mobile.svg.svg"
           width="102"
           height="84" alt="Город Седона">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span
-            class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
               <a class="site-list__link"
-                href="sedona/source/index.html">Главная</a>
+                href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link"
-                href="sedona/source/catalog.html">Фото и видео</a>
+                href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link">Форма отзыва</a>
@@ -37,22 +38,21 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Оставить отзыв о посещении Седоны</h1>
-
-      <section class="description">
-        <p class="description__title">Оставьте свой отзы</p>
+      <header class="description">
+        <h1 class="description__title">Оставьте свой отзы</h1>
         <p class="description__text">Помогите нашим отелям стать лучше! Оставьте
           отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </section>
+      </header>
 
       <section class="review">
+        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review__form" method="get"
           action="https://echo.htmlacademy.ru">
           <fieldset class="appears">
             <legend class="appears__title">Представьтесь:</legend>
             <ul class="appears__list">
               <li class="appears__item">
-                <label class="appears__lable lable" for="name">Имя</label>
+                <label class="appears__label label" for="name">Имя</label>
                 <input class="appears__input input"
                   type="text"
                   name="name"
@@ -60,7 +60,7 @@
                   placeholder="Петр">
               </li>
               <li class="appears__item">
-                <label class="appears__lable lable" for="surname">Фамилия</label>
+                <label class="appears__label label" for="surname">Фамилия</label>
                 <input class="appears__input input"
                   type="text"
                   name="surname"
@@ -68,7 +68,7 @@
                   placeholder="Иванов">
               </li>
               <li class="appears__item">
-                <label class="appears__lable lable" for="patronymic">Отчество</label>
+                <label class="appears__label label" for="patronymic">Отчество</label>
                 <input class="appears__input input"
                   type="text"
                   name="patronymic"
@@ -82,7 +82,7 @@
             <legend class="contacts__title">Контактная информация</legend>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <lable class="contacts__lable lable" for="phone"></lable>
+                <label class="contacts__label label" for="phone">Контактный телефон*:</label>
                 <input class="contacts__input input"
                   type="tel"
                   name="phone"
@@ -90,7 +90,8 @@
                   placeholder="Введите телефон">
               </li>
               <li class="contacts__item">
-                <lable class="contacts__lable lable" for="email"></lable>
+                <label class="contacts__label label" for="email">Электронная
+                  почта*:</label>
                 <input class="contacts__input input"
                   type="email"
                   name="email"
@@ -107,11 +108,11 @@
                 <input class="impression__input input"
                   type="radio"
                   name="impression"
-                  id="positive""
+                  id="positive"
                   value="positive"
                   checked>
-                <lable class="impression__lable lable" for="impression">Скорее
-                  положительное</lable>
+                <label class="impression__label label" for="positive">Скорее
+                  положительное</label>
               </li>
               <li class="impression__item">
                 <input class="impression__input input"
@@ -119,8 +120,8 @@
                   name="impression"
                   id="negative"
                   value="negative">
-                <lable class="impression__lable lable" for="impression">Скорее
-                  отрицательное</lable>
+                <label class="impression__label label" for="negative">Скорее
+                  отрицательное</label>
               </li>
               <li class="impression__item">
                 <input class="impression__input input"
@@ -128,14 +129,15 @@
                   name="impression"
                   id="unknown"
                   value="unknown">
-                <lable class="impression__lable lable" for="impression">Затрудняюсь
-                  ответить</lable>
+                <label class="impression__label label" for="unknown">Затрудняюсь
+                  ответить</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="attractions">
-            <legend class="attractions__title">Посещенные достопримечательности:</legend>
+            <legend class="attractions__title">Посещенные
+              достопримечательности:</legend>
             <ul class="attractions__list">
               <li class="attractions__item">
                 <input class="attractions__input input"
@@ -143,8 +145,8 @@
                   name="devil-bridge"
                   id="devil-bridge"
                   checked>
-                <lable class="attractions__lable lable" for="devil-bridge">Мост
-                  Дьявола</lable>
+                <label class="attractions__label label" for="devil-bridge">Мост
+                  Дьявола</label>
               </li>
               <li class="attractions__item">
                 <input class="attractions__input input"
@@ -152,7 +154,7 @@
                   name="bell-mountain"
                   id="bell-mountain"
                   checked>
-                <lable class="attractions__lable lable" for="bell-mountain">Гора-Колокол</lable>
+                <label class="attractions__label label" for="bell-mountain">Гора-Колокол</label>
               </li>
               <li class="attractions__item">
                 <input class="attractions__input input"
@@ -160,15 +162,15 @@
                   name="slide-park"
                   id="slide-park"
                   checked>
-                <lable class="attractions__lable lable" for="slide-park">Слайд-парк</lable>
+                <label class="attractions__label label" for="slide-park">Слайд-парк</label>
               </li>
               <li class="attractions__item">
                 <input class="attractions__input input"
                   type="checkbox"
                   name="red-rocks"
                   id="red-rocks">
-                <lable class="attractions__lable lable" for="red-rocks">Красные
-                  скалы</lable>
+                <label class="attractions__label label" for="red-rocks">Красные
+                  скалы</label>
               </li>
             </ul>
           </fieldset>
