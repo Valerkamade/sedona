@@ -36,11 +36,11 @@
     </header>
 
     <main class="page-main">
-      <header class="description">
+      <section class="description">
         <h1 class="description__title">Фото и видео</h1>
         <p class="description__text">Не можете решиться на путешествие из-за
           курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </header>
+      </section>
 
       <section class="foto">
         <h2 class="visually-hidden">Фото Седоны</h2>
@@ -81,11 +81,21 @@
       </section>
 
       <section class="video">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не
-          подорожали в очередной раз!</p>
-        <img class="video__preview" src="img/catalog/video-mobile.jpg.jpg" alt="Видео пути в Седону"
+        <div class="description">
+          <h2 class="description__title">Все еще сомневаетесь?</h2>
+          <p class="description__text">Смотрите видеопрезентацию и скорее за
+            билетами, пока они не
+            подорожали в очередной раз!</p>
+        </div>
+        <img class="video__preview" src="img/catalog/video-mobile.jpg.jpg"
+          alt="Видео пути в Седону"
           width="320" height="201">
+        <div class="video__control">
+          <button class="video__button" type="button" aria-label="Повторить"></button>
+          <button class="video__button" type="button" aria-label="Субтитры"></button>
+          <button class="video__button" type="button" aria-label="На весь
+            экран"></button>
+        </div>
       </section>
     </main>
 
