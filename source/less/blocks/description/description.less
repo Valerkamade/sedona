@@ -1,13 +1,26 @@
 .description {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../../img/text-index.svg"),
-    url("../../img/intro-triangle.svg"),
-    url("../../img/back-mobile.jpg");
+  background-image: url("../../../img/text-index.svg"),
+    url("../../../img/intro-triangle.svg"),
+    url("../../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 282px 214px, 100% 57px, 100% 389px;
+  background-size: 282px 214px, 100% 57px, auto 389px;
   background-position: center 90px, 50% 332px, 50% 0;
-  // min-height: 631px;
+  min-height: 609px;
   margin: 0 auto;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background: url("../../../img/white_copy2.svg") bottom/cover;
+  order: 3;
+  // transform: translateY(22px);
 }

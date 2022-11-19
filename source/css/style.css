@@ -12,19 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-.page {
-  max-width: 320px;
-  margin: 0;
-  padding: 0;
-}
-.page__body {
-  background: #ffffff;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #333333;
-  margin: 0;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,6 +24,21 @@
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.page {
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.page__body {
+  background: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
 }
 .page-header {
   position: relative;
@@ -89,18 +91,6 @@
   position: relative;
   width: 100%;
 }
-.site-list__link {
-  width: 100%;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
-  padding-top: 10px;
-  padding-bottom: 6px;
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
 .site-list__item:not(:last-child)::after {
   position: absolute;
   content: "";
@@ -119,24 +109,50 @@
   top: 1px;
   z-index: 1;
 }
+.site-list__link {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
 .description {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../../img/text-index.svg"), url("../../img/intro-triangle.svg"), url("../../img/back-mobile.jpg");
+  background-image: url("../../../img/text-index.svg"), url("../../../img/intro-triangle.svg"), url("../../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 282px 214px, 100% 57px, 100% 389px;
+  background-size: 282px 214px, 100% 57px, auto 389px;
   background-position: center 90px, 50% 332px, 50% 0;
+  min-height: 609px;
   margin: 0 auto;
 }
-.comparison {
-  background-color: #81b3d2;
-  color: #ffffff;
+.description::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background: url("../../../img/white_copy2.svg") bottom / cover;
+  order: 3;
 }
 .description__title {
-  padding-top: 421px;
   max-width: 285px;
-  margin: 0 auto;
+  margin: 32px auto 27px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -148,9 +164,93 @@
   font-size: 14px;
   line-height: 26px;
   max-width: 285px;
-  margin: 0 auto;
+  margin: 0 auto 27px;
   text-align: center;
-  padding: 26px 0 0;
+  order: 2;
+}
+.comparison {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comparison__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.comparison__item {
+  counter-increment: list-counter;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.comparison__item-title::after {
+  display: flex;
+  content: "— №" counter(list-counter) " —";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  justify-content: center;
+  padding-top: 15px;
+}
+.comparison__item-title {
+  padding-top: 55px;
+  padding-bottom: 21px;
+  background-color: #81b3d2;
+  text-align: center;
+  color: #ffffff;
+}
+.comparison__item-img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comparison__item-description {
+  text-align: center;
+  margin: 0;
+  background-color: #81b3d2;
+  padding-bottom: 39px;
+  color: #ffffff;
+}
+.recommendation {
+  color: #333333;
+}
+.recommendation__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 69px;
+  margin: 35px 0;
+}
+.recommendation__item {
+  margin-bottom: 26px;
+  position: relative;
+}
+.recommendation__item:last-child {
+  margin-bottom: 0;
+}
+.recommendation__item_icon_hous::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -49px;
+  width: 40px;
+  height: 35px;
+  background-image: url("../../../../../img/icon/icon-house.svg.png");
+  background-size: 40px 35px;
+}
+.recommendation__item-title {
+  margin-bottom: 15px;
+}
+.recommendation__item-description {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

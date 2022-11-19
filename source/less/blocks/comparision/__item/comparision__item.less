@@ -1,0 +1,24 @@
+.comparison__item {
+  counter-increment: list-counter;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  margin: 0;
+}
+
+.comparison__item-title::after {
+  display: flex;
+  content: "— №"counter(list-counter) " —";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  // background-color: var(--accent-dark);
+  // width: 70px;
+  // height: 70px;
+  // border-radius: 50%;
+  justify-content: center;
+  // align-items: center;
+  // margin: 0 auto 20px auto;
+  padding-top: 15px;
+}
