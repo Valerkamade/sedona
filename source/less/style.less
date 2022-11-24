@@ -3,41 +3,55 @@
 @import "../../source/less/global/global.less";
 @import "../../source/less/global/variabls.less";
 
+// Импорт кнопок
+@import "./blocks/button/button.less";
+
+// Импорт ссылок link
+@import "./blocks/link/link.less";
+
 // Импорт страницы
-@import "../../source/less/blocks/page/page.less";
-@import "../../source/less/blocks/page/__body/page__body.less";
+@import "./blocks/page/page.less";
+@import "./blocks/page/__body/page__body.less";
 
 // Имаорт заголовка страницы page-header
-@import "../../source/less/blocks/page-header/page-header.less";
-@import "../../source/less/blocks/page-header/__logo/page-header__logo.less";
+@import "./blocks/page-header/page-header.less";
+@import "./blocks/page-header/__logo/page-header__logo.less";
 
 // Импорт главной навигации main-nav
-@import "../../source/less/blocks/main-nav/main-nav.less";
-@import "../../source/less/blocks/main-nav/__toggle/main-nav__tpggle.less";
+@import "./blocks/main-nav/main-nav.less";
+@import "./blocks/main-nav/__toggle/main-nav__tpggle.less";
+
+// Импорт главного страницы paig-main
+@import "./blocks/page-main/page-main.less";
+
+// Импорт баннера intro
+@import "./blocks/intro/intro.less";
+@import "./blocks/intro/_page/intro_page_catalog.less";
 
 // Ипорт списка сайта site-list
-@import "../../source/less/blocks/site-list/site-list.less";
-@import "../../source/less/blocks/site-list/__item/site-list__item.less";
-@import "../../source/less/blocks/site-list/__link/site-list__link.less";
+@import "./blocks/site-list/site-list.less";
+@import "./blocks/site-list/__item/site-list__item.less";
+@import "./blocks/site-list/__link/site-list__link.less";
 
 // Импорт заголовков title
-@import "../../source/less/blocks/title/title.less";
-@import "../../source/less/blocks/page-main/page-main.less";
+@import "./blocks/title/title.less";
 
-// Импорт описания description
-@import "../../source/less/blocks/description/description.less";
-@import "../../source/less/blocks/description/__title/description__title.less";
-@import "../../source/less/blocks/description/__text/description__text.less";
+// Импорт текста text
+@import "./blocks/text/text.less";
 
 // Импорт сравнения comparison
 @import "./blocks/comparison/comparison.less";
+@import "./blocks/comparison/__wrapper/comparison__wrapper.less";
+@import "./blocks/comparison/__title/comparison__title.less";
+@import "./blocks/comparison/__text/comparison__text.less";
 @import "./blocks/comparison/__list/comparison__list.less";
 @import "./blocks/comparison/__item/comparison__item.less";
+@import "./blocks/comparison/__item/_accent/comparison__item_accent.less";
 @import "./blocks/comparison/__item-title/comparison__item-title.less";
 @import "./blocks/comparison/__item-img/comparison__item-img.less";
 @import "./blocks/comparison/__item-description/comparison__item-description.less";
 @import "./blocks/comparison/__item-title/_accent/comparison__item-title_accent.less";
-@import "./blocks/comparison/__item-description/_accent/comparison__item-description_accent.less";
+// @import "./blocks/comparison/__item-description/_accent/comparison__item-description_accent.less";
 
 // Импорт рекомендаций recomendation
 @import "./blocks/recommendation/recommendation.less";
@@ -49,5 +63,38 @@
 @import "./blocks/recommendation/__item-title/recommendation__item-title.less";
 @import "./blocks/recommendation/__item-description/recommendation__item-description.less";
 
+// Импорт поиска search
+@import "./blocks/search/search.less";
+@import "./blocks/search/__title/search__title.less";
+@import "./blocks/search/__description/search__description.less";
+
 // Импорт карта map
 @import "./blocks/map/__card/map__card.less";
+
+// Импорт подвала footer
+@import "./blocks/page-footer/page-footer.less";
+@import "./blocks/page-footer/__hashtag/page-footer__hashtag.less";
+
+// Импорт социальных кнопок social
+@import "./blocks/social/social.less";
+@import "./blocks/social/__list/social__list.less";
+@import "./blocks/social/__button/social__button.less";
+@import "./blocks/social/__button/_var/social__button_var_twitter.less";
+@import "./blocks/social/__button/_var/social__var_button_fb.less";
+@import "./blocks/social/__button/_var/social__var_button_youtube.less";
+
+// Импорт копирайта copyright
+@import "./blocks/copyright/copyright.less";
+@import "./blocks/copyright/__link/copyright__link.less";
+@import "./blocks/copyright/__text/copyright__text.less";
+
+// Импорт фото foto
+@import "./blocks/foto/__wrapper/foto__wrapper.less";
+@import "./blocks/foto/__title/foto__title.less";
+@import "./blocks/foto/__text/foto__text.less";
+@import "./blocks/foto/__list/foto__list.less";
+@import "./blocks/foto/__item/foto__item.less";
+@import "./blocks/foto/__item-img/foto__item-img.less";
+@import "./blocks/foto/__item-title/foto__item-title.less";
+@import "./blocks/foto/__item-autor/foto__item-autor.less";
+@import "./blocks/foto/__item-like/foto__item-like.less";

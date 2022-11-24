@@ -2,33 +2,47 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      user-scalable=no">
     <title>Sedona</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
+
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__link" href="index.html">
-        <img class="page-header__logo" src="img/logotype-mobile.svg.svg"
+      <a class="page-header__link"
+        href="index.html">
+        <img class="page-header__logo"
+          src="./img/logotype-mobile.svg"
           width="102"
-          height="84" alt="Город Седона">
+          height="84"
+          alt="Город Седона">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span
-            class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link"
+            <li class="site-list__item site-list__item_current">
+              <a class="site-list__link link"
                 href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link">Фото и видео</a>
+            <li class="site-list__item site-list__item_current">
+              <a class="site-list__link link">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
+              <a class="site-list__link link"
+                href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML ACADEMY</a>
+              <a class="site-list__link link"
+                href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -36,34 +50,40 @@
     </header>
 
     <main class="page-main">
-      <section class="description">
-        <h1 class="description__title">Фото и видео</h1>
-        <p class="description__text">Не можете решиться на путешествие из-за
-          курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </section>
+      <h1 class="page-main__title visually-hidden">Фото и видео галерея</h1>
+      <div class="intro intro_page_catalog">
+      </div>
 
       <section class="foto">
-        <h2 class="visually-hidden">Фото Седоны</h2>
+        <div class="foto__wrapper">
+          <h2 class="foto__title title">Фото и видео</h2>
+          <p class="foto__text text">Не можете решиться на путешествие из-за
+            курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+
         <ul class="foto__list">
           <li class="foto__item">
-            <h3 class="foto__item-title">Неродные просторы</h3>
-            <img class="foto__item-img" src="img/catalog/photo-1-mobile.jpg.jpg"
-              alt="Закат, дорога,
-              горы" width="280" height="280">
+            <h3 class="foto__item-title title">Неродные просторы</h3>
+            <img class="foto__item-img"
+              src="img/catalog/photo-1-mobile.jpg.jpg"
+              alt="Закат, дорога, горы"
+              width="280" height="280">
             <p class="foto__item-autor">Автор фото: Борис</p>
             <span class="foto__item-like">1350</span>
           </li>
           <li class="foto__item">
             <h3 class="foto__item-title">Местная растительность</h3>
-            <img class="foto__item-img" src="img/catalog/photo-2-mobile.jpg.jpg"
-              alt=" Кактусы на фоне
-              гор" width="280" height="280">
+            <img class="foto__item-img"
+              src="img/catalog/photo-2-mobile.jpg.jpg"
+              alt=" Кактусы на фоне гор"
+              width="280" height="280">
             <p class="foto__item-autor">Автор фото: Сергей</p>
             <span class="foto__item-like">143</span>
           </li>
           <li class="foto__item">
             <h3 class="foto__item-title">Дорога на север</h3>
-            <img class="foto__item-img" src="img/catalog/photo-3-mobile.jpg.jpg"
+            <img class="foto__item-img"
+              src="img/catalog/photo-3-mobile.jpg.jpg"
               alt="Горный серпантин"
               width="280" height="280">
             <p class="foto__item-autor">Автор фото: Петр</p>
@@ -71,9 +91,10 @@
           </li>
           <li class="foto__item">
             <h3 class="foto__item-title">Мост Дьявола</h3>
-            <img class="foto__item-img" src="img/catalog/photo-4-desktop_1.jpg"
-              alt="Мост Дьявола на
-              фоне долины и гор" width="280" height="280">
+            <img class="foto__item-img"
+              src="img/catalog/photo-4-desktop_1.jpg"
+              alt="Мост Дьявола на фоне долины и гор"
+              width="280" height="280">
             <p class="foto__item-autor">Автор фото: Антон</p>
             <span class="foto__item-like">254</span>
           </li>
@@ -81,9 +102,9 @@
       </section>
 
       <section class="video">
-        <div class="description">
-          <h2 class="description__title">Все еще сомневаетесь?</h2>
-          <p class="description__text">Смотрите видеопрезентацию и скорее за
+        <div class="vide__description">
+          <h2 class="video__title title">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за
             билетами, пока они не
             подорожали в очередной раз!</p>
         </div>
@@ -100,40 +121,41 @@
     </main>
 
     <footer class="page-footer">
-      <div class="wrapper">
-        <a class="hashtag" href="#">#visitsedona</a>
+      <a class="page-footer__hashtag link" href="#">#visitsedona</a>
 
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__button social__button--twitter
-                button"
-                href="twitter.ru"
-                aria-label="Твиттер"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__button button social__button--fb"
-                href="fb.com"
-                aria-label="Фэйсбук"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__button button
-                social__button--youtube"
-                href="yuotube.com"
-                aria-label="Ютуб"></a>
-            </li>
-          </ul>
-        </div>
+      <nav class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__button social__button_var_twitter button"
+              href="twitter.ru"
+              aria-label="Твиттер">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__button button social__var_button_fb"
+              href="fb.com"
+              aria-label="Фэйсбук">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__button button social__var_button_youtube"
+              href="yuotube.com"
+              aria-label="Ютуб">
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="copyright">
-          <a class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">Разработано</p>
-            <img class="copyright__img"
-              src="/source/img/htmlacademy.svg"
-              width="27" height="34" alt="Логотип HTML Academy">
-          </a>
-        </div>
+      <div class="copyright">
+        <a class="copyright__link link"
+          href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">Разработано</p>
+          <img class="copyright__img"
+            src="./img/htmlacademy.svg"
+            width="27"
+            height="34"
+            alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
