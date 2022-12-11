@@ -86,6 +86,9 @@
   z-index: 2;
   border: none;
 }
+.page-main {
+  width: 100%;
+}
 .intro {
   background-image: url("../../../img/text-index.svg"), url("../../../img/intro-triangle.svg"), url("../../../img/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -155,7 +158,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   max-width: 285px;
 }
@@ -409,7 +412,7 @@
 .foto__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -471,6 +474,99 @@
   background-repeat: no-repeat;
   top: -3px;
   left: 0;
+}
+.video {
+  margin-bottom: 49px;
+}
+.video__title {
+  text-transform: none;
+  margin-bottom: 26px;
+}
+.video__text {
+  line-height: 24px;
+  max-width: 266px;
+  text-align: center;
+  margin: 0 auto 33px;
+}
+.review__wrapper {
+  margin: 34px auto 28px;
+}
+.review__title {
+  text-transform: none;
+  margin-bottom: 26px;
+}
+.review__text {
+  text-transform: none;
+  line-height: 24px;
+  width: 100%;
+}
+.review__form {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.fieldset {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.fieldset::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  left: -20px;
+  top: -65px;
+}
+.label {
+  line-height: 26px;
+  margin-right: 13px;
+}
+.input {
+  padding: 18px 22px 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+.input::-moz-placeholder {
+  color: #000000;
+}
+.input::placeholder {
+  color: #000000;
+}
+.appears {
+  margin-bottom: 46px;
+}
+.appears__title {
+  text-transform: none;
+  margin-bottom: 19px;
+  padding: 0;
+}
+.appears__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.appears__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.appears__item:last-child {
+  margin-bottom: 0;
+}
+.contacts__title {
+  margin-bottom: 17px;
+}
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
