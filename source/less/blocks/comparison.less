@@ -1,0 +1,120 @@
+.comparison {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.comparison__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 320px;
+  height: 37px;
+  background: url("../img/white_copy2.svg") bottom/cover;
+  z-index: 5;
+}
+
+.comparison__title {
+  margin: 32px auto 27px;
+}
+
+.comparison__text {
+  margin-bottom: 27px;
+}
+
+.comparison__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.comparison__item {
+  counter-increment: list-counter;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  margin: 0;
+  background-color: @gray-light;
+}
+
+.comparison__item-title::after {
+  display: flex;
+  content: "— №"counter(list-counter) " —";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.comparison__item:nth-child(n+3)::before {
+  position: absolute;
+  content: "";
+  width: 87%;
+  height: 1px;
+  background-color: @gray;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.comparison__item_accent {
+  background-color: @accent;
+  color: @white;
+}
+
+.comparison__item_accent:nth-child(1) .comparison__item-title_accent {
+  padding-top: 55px;
+}
+
+.comparison__item_accent:nth-child(1) .comparison__item-description_accent {
+  padding-bottom: 39px;
+}
+
+.comparison__item_accent:nth-child(2) .comparison__item-title_accent {
+  padding-top: 39px;
+}
+
+.comparison__item_accent:nth-child(2) .comparison__item-description_accent {
+  padding-bottom: 35px;
+}
+
+.comparison__item-title {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.comparison__item-img {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.comparison__item-description {
+  text-align: center;
+  margin: 0;
+  // background-color: @accent;
+  padding-bottom: 24px;
+  color: inherit;
+}
+
+.comparison__item-title_accent {
+  color: @white;
+}
+
+.comparison__item-description_accent {
+  color: @white;
+  background-color: @accent;
+}
