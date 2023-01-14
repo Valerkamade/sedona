@@ -1,21 +1,20 @@
 .page {
-  max-width: 320px;
-  margin: 0;
-  padding: 0;
-  // overflow: hidden;
-  min-height: 100%;
   display: flex;
-}
-
-.page__body {
   background: @white;
   font-family: "PT Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  background-color: @main;
+}
+
+.page__body {
+  max-width: 1200px;
+  min-height: 100%;
   color: @text;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
-  // overflow: hidden;
+  background-color: @white;
+  box-shadow: 0 5px 15px @black20;
 }

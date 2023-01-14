@@ -1,6 +1,5 @@
 .page-header {
   position: relative;
-  z-index: 5;
 }
 
 .page-header__logo {
@@ -12,4 +11,11 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+  z-index: 5;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    z-index: 5;
+  }
 }

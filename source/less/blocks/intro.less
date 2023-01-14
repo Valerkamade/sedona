@@ -3,7 +3,7 @@
     url("../img/intro-triangle.svg"),
     url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 282px 214px, 100% 57px, auto 389px;
+  background-size: auto 214px, 100% 57px, auto 389px;
   background-position: center center, center bottom, center top;
   min-height: 389px;
 }
@@ -15,4 +15,11 @@
   background-size: 229px 39px, 100% 57px, auto;
   background-position: center, center bottom, center bottom;
   min-height: 158px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    min-height: 518px;
+    background-size: auto 350px, 100% 57px, auto 518px;
+  }
 }

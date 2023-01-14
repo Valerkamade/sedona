@@ -4,7 +4,7 @@
 
 .copyright__link {
   display: flex;
-  margin: 40px 0 23px;
+  margin: 40px 0 0;
   align-items: center;
   gap: 12px;
 }
@@ -17,4 +17,10 @@
 .copyright__img {
   width: 27px;
   height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin: 0;
+  }
 }
