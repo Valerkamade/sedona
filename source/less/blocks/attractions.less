@@ -18,3 +18,21 @@
 .attractions__item:last-of-type {
   margin-bottom: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .attractions {
+    grid-column: span 2;
+  }
+
+  .attractions__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 224px);
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions__list {
+    grid-template-columns: repeat(auto-fit, 240px);
+  }
+}

@@ -15,7 +15,8 @@
       <a class="page-header__link" href="./index.html">
         <img class="page-header__logo"
           src="./img/logotype-mobile.svg"
-          width="102" height="84"
+          width="102"
+          height="84"
           alt="Город Седона">
       </a>
 
@@ -23,7 +24,8 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper visually-hidden">
+
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link link"
@@ -54,8 +56,8 @@
         <div class="review__wrapper">
           <h2 class="review__title title">Оставьте свой отзыв</h2>
           <p class="review__text text">Помогите нашим отелям стать лучше!
-            оставьте
-            отзыв о них, а также о посещенных вами достопримечательностях</p>
+            оставьте отзыв о них, а также о посещенных вами
+            достопримечательностях</p>
         </div>
 
         <h2 class="visually-hidden">Форма отзыва</h2>
@@ -216,46 +218,49 @@
           </fieldset>
 
           <button class="review__button button" type="submit">Отправить отзыв</button>
+          <p class="review__description">* — обязательные поля</p>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__hashtag link" href="#">#visitsedona</a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__hashtag link" href="#">#visitsedona</a>
 
-      <nav class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__button social__button_var_twitter button"
-              href="https://witter.ru"
-              aria-label="Твиттер">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button button social__var_button_fb"
-              href="https://fb.com"
-              aria-label="Фэйсбук">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button button social__var_button_youtube"
-              href="https://yuotube.com"
-              aria-label="Ютуб">
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__button social__button_var_twitter button"
+                href="https://witter.ru"
+                aria-label="Твиттер">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__button button social__var_button_fb"
+                href="https://fb.com"
+                aria-label="Фэйсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__button button social__var_button_youtube"
+                href="https://yuotube.com"
+                aria-label="Ютуб">
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="copyright">
-        <a class="copyright__link link"
-          href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">Разработано</p>
-          <img class="copyright__img"
-            src="./img/htmlacademy.svg"
-            width="27"
-            height="34"
-            alt="Логотип HTML Academy">
-        </a>
+        <div class="copyright">
+          <a class="copyright__link link"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано</p>
+            <img class="copyright__img"
+              src="./img/htmlacademy.svg"
+              width="27"
+              height="34"
+              alt="Логотип HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
 

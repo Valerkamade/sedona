@@ -4,14 +4,13 @@
 
 .review__title {
   text-transform: none;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 .review__text {
   text-transform: none;
   line-height: 24px;
-  width: 100%;
-  max-width: 306px;
+  width: 100% - 10px;
 }
 
 .review__form {
@@ -26,4 +25,35 @@
   line-height: 26px;
   text-transform: uppercase;
   padding: 18px 34px 14px 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    margin-bottom: 61px;
+  }
+
+  .review__title {
+    text-transform: uppercase;
+  }
+
+  .review__text {
+    text-transform: uppercase;
+    max-width: 435px;
+  }
+
+  .review__form {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 120px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    margin-bottom: 66px;
+  }
+
+  .review__form {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 240px);
+  }
 }

@@ -109,15 +109,15 @@ img {
   width: 100%;
 }
 .intro {
-  background-image: url("../img/text-index.svg"), url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
+  background-image: url("../img/text-index.svg"), url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-size: auto 214px, 100% 57px, auto 389px;
   background-position: center center, center bottom, center top;
   min-height: 389px;
 }
 .intro_page_catalog {
-  background-image: url("../img/sedona.svg"), url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
-  background-size: 229px 39px, 100% 57px, auto;
+  background-image: url("../img/sedona.svg"), url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
+  background-size: auto 39px, 100% 57px, auto;
   background-position: center, center bottom, center bottom;
   min-height: 158px;
 }
@@ -125,6 +125,11 @@ img {
   .intro {
     min-height: 518px;
     background-size: auto 350px, 100% 57px, auto 518px;
+  }
+  .intro_page_catalog {
+    background-size: auto 78px, 100% 57px, auto;
+    min-height: 290px;
+    background-image: url("../img/sedona.svg"), url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
   }
 }
 .site-list {
@@ -483,7 +488,7 @@ img {
 }
 .map__card {
   border: none;
-  background-image: url("../img/map-mobile.jpg.png");
+  background-image: url("../img/map-mobile.png");
   width: 100%;
   height: 350px;
   display: block;
@@ -659,13 +664,12 @@ img {
 }
 .review__title {
   text-transform: none;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 .review__text {
   text-transform: none;
   line-height: 24px;
-  width: 100%;
-  max-width: 306px;
+  width: 90%;
 }
 .review__form {
   display: grid;
@@ -678,6 +682,31 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   padding: 18px 34px 14px 31px;
+}
+@media (min-width: 768px) {
+  .review {
+    margin-bottom: 61px;
+  }
+  .review__title {
+    text-transform: uppercase;
+  }
+  .review__text {
+    text-transform: uppercase;
+    max-width: 435px;
+  }
+  .review__form {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 120px);
+  }
+}
+@media (min-width: 1280px) {
+  .review {
+    margin-bottom: 66px;
+  }
+  .review__form {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 240px);
+  }
 }
 .fieldset {
   position: relative;
@@ -693,6 +722,11 @@ img {
   background-color: #e5e5e5;
   left: -20px;
   top: -65px;
+}
+@media (min-width: 768px) {
+  .fieldset::before {
+    display: none;
+  }
 }
 .label {
   line-height: 26px;
@@ -758,6 +792,17 @@ img {
   padding-left: 22px;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .contacts {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .impression {
   margin: 20px 0 31px;
 }
@@ -778,6 +823,11 @@ img {
 .impression__item:last-of-type {
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .impression {
+    grid-row: 1;
+  }
+}
 .attractions {
   max-width: 15px 0 30px;
 }
@@ -794,6 +844,21 @@ img {
 }
 .attractions__item:last-of-type {
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .attractions {
+    grid-column: span 2;
+  }
+  .attractions__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 224px);
+    justify-content: center;
+  }
+}
+@media (min-width: 1280px) {
+  .attractions__list {
+    grid-template-columns: repeat(auto-fit, 240px);
+  }
 }
 .review-text {
   margin: 20px 0 51px;
@@ -812,6 +877,18 @@ img {
   background-color: #f2f2f2;
   padding: 13px 23px 29px 21px;
   border: none;
+}
+.review__description {
+  display: none;
+}
+@media (min-width: 768px) {
+  .review-text {
+    grid-column: span 2;
+  }
+  .review__description {
+    display: inline;
+    justify-self: end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
