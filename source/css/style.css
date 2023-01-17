@@ -749,7 +749,7 @@ img {
     color: #ffffff;
   }
   .photo__item-like::before {
-    background-image: url("../../img/icon/like-icon_w.svg");
+    background-image: url("../img/icon/like-icon_w.svg");
   }
 }
 .video__container {
