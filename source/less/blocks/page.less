@@ -11,10 +11,16 @@
 
 .page__body {
   max-width: 1200px;
-  min-height: 100%;
+  // min-height: 100%;
   color: @text;
   margin: 0 auto;
   width: 100%;
   background-color: @white;
   box-shadow: 0 5px 15px @black20;
+}
+
+@media (min-width: @tablet-width) {
+  .page__container {
+    margin: 0 60px;
+  }
 }
