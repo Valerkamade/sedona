@@ -1,0 +1,35 @@
+.contacts {
+  padding: 20px 0 28px;
+}
+
+.contacts__title {
+  margin-bottom: 17px;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__input {
+  width: 100%;
+}
+
+.contacts__label {
+  padding-left: 22px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

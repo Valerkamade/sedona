@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      user-scalable=no">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url("./img/screen/index_mob.png");
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url("./img/screen/index_tab.png");
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1280px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url("./img/screen/index_desk.png");
+    }
+  }
+</style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+  </head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__link">
+        <img class="page-header__logo"
+          src="./img/logotype-mobile.svg"
+          width="102"
+          height="84"
+          alt="Город Седона">
+      </a>
+
+      <nav class="main-nav main-nav_nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item_current">
+              <a class="site-list__link link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link link"
+                href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link link"
+                href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link link"
+                href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Седона</h1>
+      <div class="intro intro_page_index">
+      </div>
+
+      <section class="comparison">
+        <div class="comparison__wrapper">
+          <h2 class="comparison__title title">Седона — небольшой
+            городок&nbsp;в&nbsp;Аризоне, заслуживающий
+            большего!</h2>
+          <p class="comparison__text text">
+            Рассмотрим 5 причин, по которым Седона&nbsp;круче, чем Гранд Каньон!
+          </p>
+        </div>
+
+        <ol class="comparison__list">
+          <li class="comparison__item comparison__item_accent">
+            <div class="comparison__item-wrapper
+              comparison__item-wrapper_accent">
+              <h3 class="comparison__item-title comparison__item-title_accent
+                title">Настоящий городок</h3>
+              <p class="comparison__item-description
+                comparison__item-description_accent">
+                Седона не аттракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
+            <img class="comparison__item-img comparison__item-img_foto_city"
+              src="img/content/photo-city@1x.jpg"
+              width="320"
+              height="260"
+              alt="Вид на город">
+            <div class="recommendation">
+              <ul class="recommendation__list">
+                <li class="recommendation__item recommendation__item_icon_hous">
+                  <h4 class="recommendation__item-title title">Жилье</h4>
+                  <p class="recommendation__item-description">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                </li>
+                <li class="recommendation__item
+                  recommendation__item_icon_gift">
+                  <h4 class="recommendation__item-title title">Сувениры</h4>
+                  <p class="recommendation__item-description">
+                    Не только китайского, но и местного производсва!
+                  </p>
+                </li>
+                <li class="recommendation__item recommendation__item_icon_meal">
+                  <h4 class="recommendation__item-title title">Еда</h4>
+                  <p class="recommendation__item-description">
+                    Всегда заказывайте фирменный&nbsp;бургер, Вы не
+                    разочаруетесь!
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="comparison__item comparison__item_accent">
+            <div class="comparison__item-wrapper
+              comparison__item-wrapper_accent">
+              <h3 class="comparison__item-title comparison__item-title_accent
+                title">Там есть мост Дьявола</h3>
+              <p class="comparison__item-description
+                comparison__item-description_accent">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
+              </p>
+            </div>
+            <img class="comparison__item-img comparison__item-img_foto_can"
+              src="img/content/photo-bridge@1x.jpg"
+              width="320"
+              height="260"
+              alt="Мост Дьявола">
+          </li>
+          <li class="comparison__item">
+            <div class="comparison__item-wrapper">
+              <h3 class="comparison__item-title title">Небольшая площадь</h3>
+              <p class="comparison__item-description">
+                Все интересные места находятся очень близко
+              </p>
+            </div>
+          </li>
+          <li class="comparison__item">
+            <div class="comparison__item-wrapper">
+              <h3 class="comparison__item-title title">Красивая дорога</h3>
+              <p class="comparison__item-description">
+                Ехать в&nbsp;Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!
+              </p>
+            </div>
+          </li>
+          <li class="comparison__item">
+            <div class="comparison__item-wrapper">
+              <h3 class="comparison__item-title title">Мало туристов</h3>
+              <p class="comparison__item-description">
+                Большинство едет в Гранд&nbsp;Каньон и толпится&nbsp;там
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="search">
+        <div class="search__wrapper">
+          <h2 class="visually-hidden">Переход к форме поиска</h2>
+          <p class="search__title title">Заинтересовались?</p>
+          <p class="search__description">
+            Укажите предполагаемые даты поездок,
+            и&nbsp;мы&nbsp;покажем&nbsp;Вам&nbsp;лучшие предложения
+            гостиниц в Седоне
+          </p>
+          <a class="search-button button" href="/form.html">Найти Гостиницу</a>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe class="map__card" title="Карта местонахождения Седоны"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A69ef8910cae980b6972eada97eb063ed3a581b79dc2c59f171a790f6e4de469e&amp;source=constructor"
+          width="320" height="350">
+        </iframe>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__hashtag link" href="#">#visitsedona</a>
+
+        <nav class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__button social__button_var_twitter button"
+                href="https://witter.ru"
+                aria-label="Твиттер">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__button button social__var_button_fb"
+                href="https://fb.com"
+                aria-label="Фэйсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__button button social__var_button_youtube"
+                href="https://yuotube.com"
+                aria-label="Ютуб">
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="copyright">
+          <a class="copyright__link link"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано</p>
+            <img class="copyright__img"
+              src="./img/htmlacademy.svg"
+              width="27"
+              height="34"
+              alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

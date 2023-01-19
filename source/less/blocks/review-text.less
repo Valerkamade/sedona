@@ -1,0 +1,35 @@
+.review-text {
+  margin: 20px 0 51px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-text__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.review-text__text {
+  height: 118px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: @main;
+  padding: 13px 23px 29px 21px;
+  border: none;
+}
+
+.review__description {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .review-text {
+    grid-column: span 2;
+  }
+
+  .review__description {
+    display: inline;
+    justify-self: end;
+  }
+}
