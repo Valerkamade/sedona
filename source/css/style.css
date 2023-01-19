@@ -109,6 +109,13 @@ img {
     display: none;
   }
 }
+.main-nav_nojs .main-nav__toggle {
+  display: none;
+}
+.main-nav_nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
 .page-main {
   width: auto;
 }
@@ -723,10 +730,6 @@ img {
   .photo__item-img {
     aspect-ratio: 1.49812734;
     margin-bottom: 0;
-  }
-  .photo__item:first-of-type {
-    grid-column-start: 1;
-    grid-column-end: -1;
   }
   .photo__item:first-of-type .photo__item-img {
     aspect-ratio: 3;

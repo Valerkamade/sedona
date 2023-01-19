@@ -9,6 +9,32 @@
       user-scalable=no">
     <title>Sedona</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url("./img/screen/index_mob.png");
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url("./img/screen/index_tab.png");
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1280px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url("./img/screen/index_desk.png");
+    }
+  }
+</style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
 
   <body class="page__body">
@@ -21,7 +47,7 @@
           alt="Город Седона">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav_nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
