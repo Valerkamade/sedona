@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Pixel Glass -->
     <style>
-  HTML {
+  .page {
     background-repeat: no-repeat;
-    background-position:  50% 0;
+    background-position:  50% -223px;
     /* По умолчанию показывается мобильный макет */
     background-image: url("./img/screen/index_mob.png");
   }
   /* Планшет */
-  @media ( min-width: 768px ) {
-    HTML {
+  @media (min-width: 768px) {
+    .page {
       /* Планшетный макет */
       background-image: url("./img/screen/index_tab.png");
+      background-position-y: 0;
     }
   }
   /* Десктоп */
-  @media ( min-width: 1280px ) {
-    HTML {
+  @media (min-width: 1280px) {
+    .page {
       /* Десктопный макет */
       background-image: url("./img/screen/index_desk.png");
     }
@@ -81,9 +82,8 @@
 
       <section class="comparison">
         <div class="comparison__wrapper">
-          <h2 class="comparison__title title">Седона — небольшой
-            городок&nbsp;в&nbsp;Аризоне, заслуживающий
-            большего!</h2>
+          <h2 class="comparison__title title">СЕДОНА&nbsp;&mdash; небольшой
+            городок&nbsp;в&nbsp;АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
           <p class="comparison__text text">
             Рассмотрим 5 причин, по которым Седона&nbsp;круче, чем Гранд Каньон!
           </p>
